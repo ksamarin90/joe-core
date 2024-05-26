@@ -1,0 +1,4 @@
+- convert storage variables _beneficiary, _cliff, _start, _duration, _revocable to immutable
+- line 38. _released and _revoked could be packed into one storage struct
+- line 181. Cache _released[address(token)] and return it, use further in functions
+- line 125. release could also be batched so that in case of multiple tokens claimer could call contract once 
